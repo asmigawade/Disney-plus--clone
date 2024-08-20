@@ -1,70 +1,91 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Disney Plus Clone
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+The Disney Plus Clone is a React application that mimics the Disney Plus streaming service interface. The app features authentication through Firebase, a stylish UI created with Styled Components, and showcases a range of movies and TV shows similar to the Disney Plus platform.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **User Authentication**: Sign up, log in, and log out using Firebase Authentication.
+- **Styled Components**: A visually appealing user interface styled with Styled Components.
+- **Content Display**: Browse through a list of movies and TV shows.
+- **Responsive Design**: Works across different screen sizes and devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. **Clone the repository**:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/yourusername/disney-plus-clone.git
+   ```
 
-### `npm run build`
+2. **Navigate to the project directory**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   cd disney-plus-clone
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Install dependencies**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+4. **Configure Firebase**:
+   - Create a Firebase project and set up authentication.
+   - Add your Firebase configuration details to the `.env` file in the project root. For example:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+     ```
+     REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
+     REACT_APP_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+     REACT_APP_FIREBASE_PROJECT_ID=your_firebase_project_id
+     REACT_APP_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
+     REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
+     REACT_APP_FIREBASE_APP_ID=your_firebase_app_id
+     ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. **Start the development server**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   The application will be available at `http://localhost:3000`.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Sign Up / Log In**:
+   - Use the authentication form to sign up or log in with your email and password.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Browse Content**:
+   - Navigate through the available movies and TV shows, and click on items to view more details.
 
-### Code Splitting
+3. **Responsive Design**:
+   - The app is designed to be responsive, so it should look good on both desktop and mobile devices.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Components
 
-### Analyzing the Bundle Size
+- `App`: The main component that sets up routing and authentication context.
+- `Header`: Displays the navigation and user authentication options.
+- `Home`: Shows the main content, including movie and TV show listings.
+- `Login`: Handles user login and registration.
+- `MovieDetail`: Displays detailed information about a selected movie or show.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Dependencies
 
-### Making a Progressive Web App
+- `react`: The core React library.
+- `styled-components`: For component-level styling.
+- `firebase`: For authentication and other Firebase services.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+##Userflow
+![image](https://github.com/user-attachments/assets/128e6dfa-2269-46f8-9cb6-eed28e3c8232)
 
-### Advanced Configuration
+![image](https://github.com/user-attachments/assets/48d89548-173f-4c67-a19e-654a5ebb71bf)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![image](https://github.com/user-attachments/assets/cb52ee61-6bb2-4b2a-adac-991de866d702)
 
-### Deployment
+![image](https://github.com/user-attachments/assets/79df522d-89cf-498b-8244-2d64a4944097)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![image](https://github.com/user-attachments/assets/1569be3a-3929-4514-a900-712df30da108)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
